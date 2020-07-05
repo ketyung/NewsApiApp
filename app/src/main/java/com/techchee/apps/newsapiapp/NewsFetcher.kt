@@ -61,7 +61,7 @@ class NewsFetchingAsyncTask (private val q : String? = null, private val newsFet
         val formatter = SimpleDateFormat("yyyy-MM-dd",  Locale.getDefault())
         val dateAsString = formatter.format(date)
 
-        val myurl = "https://newsapi.org/v2/everything?q=$q&from=$dateAsString&sortBy=publishedAt&apiKey=d94eca0209ff462abb2bc71315676332&language=en"
+        val myurl = "https://newsapi.org/v2/everything?q=$q&from=$dateAsString&sortBy=publishedAt&apiKey=YOUR_API_KEY&language=en"
 
         val s = this.sendGet(myurl)
 

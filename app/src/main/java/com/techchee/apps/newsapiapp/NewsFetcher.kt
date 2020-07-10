@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
-interface NewsFetchingListener {
+interface NewsFetchedListener {
 
     fun whenNewsFetchedSuccessfully ( articles : List<Article>?)
 
